@@ -13,6 +13,7 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM="auto verbose"
 export GIT_PS1_SHOWSTASHSTATE=1
+
 # --- Customize Bash Prompt ---
 # [machinename] - [pwd] (git-repo)
 # username $ 
@@ -37,8 +38,7 @@ alias lla='ls -la'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
-alias gstage='git checkout stage; git merge dev'
-alias gprod='git checkout prod; git merge stage'
+alias gl='git log --graph --oneline --decorate --all'
 
 # Colored output in grep
 alias grep='grep --color=auto'
