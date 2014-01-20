@@ -11,7 +11,7 @@ shopt -s histappend
 # Git stuff
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
-export GIT_PS1_SHOWUPSTREAM="auto"
+export GIT_PS1_SHOWUPSTREAM="auto verbose"
 export GIT_PS1_SHOWSTASHSTATE=1
 # --- Customize Bash Prompt ---
 # [machinename] - [pwd] (git-repo)
