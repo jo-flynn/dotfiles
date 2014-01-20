@@ -12,11 +12,11 @@ shopt -s histappend
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM="auto"
-
+export GIT_PS1_SHOWSTASHSTATE=1
 # --- Customize Bash Prompt ---
-# [machinename] - [pwd] (git-repo) (svn-r#)
+# [machinename] - [pwd] (git-repo)
 # username $ 
-PS1="\n\[\033[0;33m\][\h] - [\w]\[\033[0m\]\[\033[32m\]\$(__git_ps1)\[\033[32m\] \n\[\033[0;36m\]\u \[\033[0;31m\]$ \[\033[0m\]"
+PS1="\n\[\033[0;33m\][\h] - [\w]\[\033[0m\]\[\033[32m\]\$(__git_ps1 ' (%s)')\[\033[32m\] \n\[\033[0;36m\]\u \[\033[0;31m\]$ \[\033[0m\]"
 
 # --- Setup Color Vars ---
 export CLICOLOR=1
