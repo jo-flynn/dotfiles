@@ -1,6 +1,6 @@
 # pull in git scripts
-[[ -f ".git_completion.bash" ]] && source ".git_completion.bash"
-[[ -f ".git_prompt.sh" ]] && source ".git_prompt.sh"
+[[ -f "$HOME/dotfiles/.git_completion.bash" ]] && source "$HOME/dotfiles/.git_completion.bash"
+[[ -f "$HOME/dotfiles/.git_prompt.sh" ]] && source "$HOME/dotfiles/.git_prompt.sh"
 
 # keep history "forever"
 export HISTSIZE=100000
