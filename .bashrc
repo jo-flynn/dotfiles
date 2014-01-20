@@ -29,7 +29,7 @@ export PATH
 
 # File navigation aliases
 alias cd..='cd ..'
-alias ls='ls -F'
+alias ls='ls -hF -G'
 alias ll='ls -l'
 alias lla='ls -la'
 
