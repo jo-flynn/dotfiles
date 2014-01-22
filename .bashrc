@@ -47,3 +47,6 @@ alias svnlog='svn log -l 10 --verbose'
 # Autocomplete settings
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
+
+# Mount shortcuts
+alias mountboom='sshfs -o workaround=rename,reconnect,volname=www joe@boomstick:/home/joe/www ~/www'
