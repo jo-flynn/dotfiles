@@ -39,6 +39,8 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias gl='git log --graph --oneline --decorate --all'
+# Delete all local, merged branches except hte current one & dev
+alias gitclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git branch -d'
 
 # Colored output in grep
 alias grep='grep --color=auto'
