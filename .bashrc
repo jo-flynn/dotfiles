@@ -16,7 +16,7 @@ export GIT_PS1_SHOWSTASHSTATE=1
 
 # --- Customize Bash Prompt ---
 # [machinename] - [pwd] (git-repo)
-# username $ 
+# username $
 PS1="\n\[\033[0;33m\][\h] - [\w]\[\033[0m\]\[\033[32m\]\$(__git_ps1 ' (%s)')\[\033[32m\] \n\[\033[0;36m\]\u \[\033[0;31m\]$ \[\033[0m\]"
 
 # --- Setup Color Vars ---
@@ -28,19 +28,23 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 export PATH=/usr/local/bin:$PATH
 export PATH
 
-# File navigation aliases
+# -- File navigation aliases --
 alias cd..='cd ..'
 alias ls='ls -hF -G'
 alias ll='ls -l'
 alias lla='ls -la'
 
-# Git
+# --  Git --
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
 alias gl='git log --graph --oneline --decorate --all'
+
 # Delete all local, merged branches except hte current one & dev
 alias branchclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git branch -d'
+
+# cd to root of current git repo
+alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 
 # Colored output in grep
 alias grep='grep --color=auto'
@@ -52,4 +56,3 @@ bind "set show-all-if-ambiguous on"
 
 # Mount shortcuts
 alias mountboom='sshfs -o workaround=rename,reconnect,volname=www joe@boomstick:/home/joe/www ~/www'
-alias mountsvn='sshfs -o workaround=rename,reconnect,volname=www joe@boomstick:/home/joe/www-svn ~/www'
