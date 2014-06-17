@@ -36,7 +36,6 @@ alias lla='ls -la'
 
 # --  Git --
 alias gl='git log --graph --oneline --decorate --all'
-alias gitup='git checkout dev; git pull upstream dev'
 
 # Delete all local, merged branches except hte current one & dev
 alias branchclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git branch -d'
@@ -53,3 +52,8 @@ bind "set show-all-if-ambiguous on"
 
 # Mount shortcuts
 alias mountboom='sshfs -o workaround=rename,reconnect,volname=www joe@boomstick:/home/joe/www ~/www'
+
+function gitup() {
+    git checkout $1
+    git pull upstream $1
+}
