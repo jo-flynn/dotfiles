@@ -35,10 +35,8 @@ alias ll='ls -l'
 alias lla='ls -la'
 
 # --  Git --
-alias ga='git add'
-alias gc='git commit -m'
-alias gp='git push'
 alias gl='git log --graph --oneline --decorate --all'
+alias gitup='git checkout dev; git pull upstream dev'
 
 # Delete all local, merged branches except hte current one & dev
 alias branchclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git branch -d'
@@ -46,9 +44,8 @@ alias branchclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git br
 # cd to root of current git repo
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
 
-# Colored output in grep
+# Color output in grep
 alias grep='grep --color=auto'
-alias svnlog='svn log -l 10 --verbose'
 
 # Autocomplete settings
 bind "set completion-ignore-case on"
