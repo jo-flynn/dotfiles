@@ -30,7 +30,7 @@ export PATH
 
 # -- File navigation aliases --
 alias cd..='cd ..'
-alias ls='ls -hF -G'
+alias ls='ls -hF --color'
 alias ll='ls -l'
 alias lla='ls -la'
 
