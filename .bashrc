@@ -30,7 +30,7 @@ export PATH
 
 # -- File navigation aliases --
 alias cd..='cd ..'
-alias ls='ls -hF --color'
+alias ls='ls -hF'
 alias ll='ls -l'
 alias lla='ls -la'
 
@@ -67,7 +67,11 @@ function cw() {
 function _cw() {
     local cur opts
     cur="${COMP_WORDS[COMP_CWORD]}"
-    opts=$(cd ~/www ; ls -d --color=never */. | sed 's|/./||')
+    if [ $OSTYPE = "linux-gnu" ]; then
+        opts=$(cd ~/www ; ls -d --color=never */. | sed 's|/./||')
+    else 
+        opts=$(cd ~/www ; ls -d */. | sed 's|/./||')
+    fi
     COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
 }
 
