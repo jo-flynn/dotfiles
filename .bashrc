@@ -57,3 +57,18 @@ function gitup() {
     git checkout $1
     git pull upstream $1
 }
+
+# Change to working directory
+function cw() {
+    cd ~/www/$1
+}
+
+# Add folder completion to cw function
+function _cw() {
+    local cur opts
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    opts=$(cd ~/www ; ls -d --color=never */. | sed 's|/./||')
+    COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
+}
+
+complete -F _cw cw
