@@ -62,6 +62,10 @@ function gitup() {
     git pull upstream $1
 }
 
+function gb() {
+    git checkout -b $1
+}
+
 # Change to working directory
 function cw() {
     cd ~/www/$1
