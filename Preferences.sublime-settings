@@ -62,7 +62,7 @@
         "cache/slir",
         "node_modules"
     ],
-    "font_face": "Source Code Pro",
+    "font_face": "Input Mono",
     "font_options":
     [
         "no_round"
@@ -81,8 +81,8 @@
         "node_modules"
     ],
     "intent_to_bracket": true,
-    "line_padding_bottom": 1,
-    "line_padding_top": 1,
+    "line_padding_bottom": 0.8,
+    "line_padding_top": 0.8,
     "match_brackets": false,
     "scroll_past_end": true,
     "show_full_path": true,
