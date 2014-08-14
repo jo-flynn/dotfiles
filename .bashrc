@@ -17,7 +17,7 @@ export GIT_PS1_SHOWSTASHSTATE=1
 # --- Customize Bash Prompt ---
 # [machinename] - [pwd] (git-repo)
 # username $
-PS1="\n\[\033[0;33m\][\u@\h] \033[34m\]\w\[\033[0m\]\[\033[35m\]\$(__git_ps1 ' {%s}')\[\033[35m\]\n\[\033[0;31m\]$ \[\033[0m\]"
+PS1="\n\[\033[0;33m\]\u@\h \033[34m\]\w\[\033[0m\]\n\[\033[32m\]\$(__git_ps1 '%s ')\[\033[35m\]\[\033[0;31m\]$ \[\033[0m\]"
 
 # --- Setup Color Vars ---
 export CLICOLOR=1
