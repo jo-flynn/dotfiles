@@ -1,11 +1,11 @@
 {
     "user": {
-        "debug": true,
+        "debug": false,
         "delay": 0.25,
         "error_color": "D02000",
         "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
         "gutter_theme_excludes": [],
-        "lint_mode": "background",
+        "lint_mode": "save only",
         "linters": {
             "csslint": {
                 "@disable": false,

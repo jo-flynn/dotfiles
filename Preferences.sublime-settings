@@ -81,8 +81,8 @@
         "node_modules"
     ],
     "intent_to_bracket": true,
-    "line_padding_bottom": 2,
-    "line_padding_top": 2,
+    "line_padding_bottom": 3,
+    "line_padding_top": 3,
     "match_brackets": false,
     "scroll_past_end": true,
     "show_full_path": true,
