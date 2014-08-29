@@ -99,7 +99,7 @@
         "Ruby on Rails": "ruby"
     },
     "tab_size": 4,
-    "theme": "Soda Light 3.sublime-theme",
+    "theme": "Spacegray.sublime-theme",
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": true
