@@ -40,12 +40,11 @@ alias lla='ls -la'
 
 # --  Git --
 alias gl='git log --graph --oneline --decorate --all'
-
-# Delete all local, merged branches except hte current one & dev
-alias branchclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git branch -d'
-
-# cd to root of current git repo
-alias gitroot='cd "$(git rev-parse --show-toplevel)"'
+alias branchclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git branch -d' # Delete all local, merged branches except hte current one & dev
+alias gitroot='cd "$(git rev-parse --show-toplevel)"' # cd to root of current git repo
+function gbr() {
+    git checkout -b $1
+}
 
 # Color output in grep
 alias grep='grep --color=auto'
