@@ -26,6 +26,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # -- PATH --
 export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
 export PATH
 
 # -- File navigation aliases --
