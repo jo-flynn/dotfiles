@@ -21,8 +21,9 @@ PS1="\n\[\033[0;33m\]\u@\h \033[34m\]\w\[\033[0m\]\n\[\033[32m\]\$(__git_ps1 '%s
 
 # --- Setup Color Vars ---
 export CLICOLOR=1
-export TERM=xterm-color
+export TERM=screen-256color
 export LSCOLORS=ExFxCxDxBxegedabagacad
+alias tmux="tmux -2"
 
 # -- PATH --
 export PATH=/usr/local/bin:$PATH

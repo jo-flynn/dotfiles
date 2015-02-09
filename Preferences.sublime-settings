@@ -1,106 +1,108 @@
 {
-    "auto_complete": true,
-    "binary_file_patterns":
-    [
-        "*.jpg",
-        "*.jpeg",
-        "*.png",
-        "*.gif",
-        "*.ttf",
-        "*.tga",
-        "*.dds",
-        "*.ico",
-        "*.eot",
-        "*.pdf",
-        "*.swf",
-        "*.jar",
-        "*.zip",
-        "*.min.*"
-    ],
-    "bold_folder_labels": true,
-    "caret_style": "phase",
-    "color_scheme": "Packages/User/Solarized (Dark)-joeflynn (SL).tmTheme",
-    "convert_tabspaces_on_save": true,
-    "create_window_at_startup": false,
-    "detect_indentation": false,
-    "disable_tab_abbreviations": true,
-    "draw_indent_guides": true,
-    "ensure_newline_at_eof_on_save": true,
-    "file_exclude_patterns":
-    [
-        "*.pyc",
-        "*.pyo",
-        "*.exe",
-        "*.dll",
-        "*.obj",
-        "*.o",
-        "*.a",
-        "*.lib",
-        "*.so",
-        "*.dylib",
-        "*.ncb",
-        "*.sdf",
-        "*.suo",
-        "*.pdb",
-        "*.idb",
-        "*.class",
-        "*.psd",
-        "*.db",
-        "*.sublime-workspace",
-        ".DS_Store",
-        "._*",
-        ".fuse_*",
-        "*.smbdelete*"
-    ],
-    "folder_exclude_patterns":
-    [
-        ".svn",
-        ".git",
-        ".hg",
-        "CVS",
-        "tmp/cache",
-        "cache/slir",
-        "node_modules"
-    ],
-    "font_face": "Input Mono",
-    "font_options":
-    [
-        "no_round"
-    ],
-    "font_size": 11.0,
-    "highlight_line": true,
-    "highlight_modified_tabs": true,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "index_exclude_patterns":
-    [
-        "*.log",
-        "*.min.*",
-        "node_modules"
-    ],
-    "intent_to_bracket": true,
-    "line_padding_bottom": 3,
-    "line_padding_top": 3,
-    "match_brackets": false,
-    "scroll_past_end": true,
-    "show_full_path": true,
-    "smart_indent": true,
-    "soda_folder_icons": true,
-    "sublimelint": "load-save",
-    "sublimelinter_executable_map":
-    {
-        "php": "php",
-        "ruby": "rvm-auto-ruby"
-    },
-    "sublimelinter_syntax_map":
-    {
-        "Ruby on Rails": "ruby"
-    },
-    "tab_size": 4,
-    "theme": "Spacegray.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true,
-    "word_wrap": true
+	"auto_complete": true,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.min.*"
+	],
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/Solarized (Dark)-joeflynn (SL).tmTheme",
+	"convert_tabspaces_on_save": true,
+	"create_window_at_startup": false,
+	"default_line_ending": "unix",
+	"detect_indentation": false,
+	"disable_tab_abbreviations": true,
+	"draw_indent_guides": true,
+	"ensure_newline_at_eof_on_save": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		".DS_Store",
+		"._*",
+		".fuse_*",
+		"*.smbdelete*"
+	],
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"tmp/cache",
+		"cache/slir",
+		"node_modules"
+	],
+	"font_face": "Input Mono",
+	"font_options":
+	[
+		"no_round"
+	],
+	"font_size": 11.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		"*.min.*",
+		"node_modules"
+	],
+	"intent_to_bracket": true,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"match_brackets": false,
+	"scroll_past_end": true,
+	"show_full_path": true,
+	"smart_indent": true,
+	"soda_folder_icons": true,
+	"sublimelint": "load-save",
+	"sublimelinter_executable_map":
+	{
+		"php": "php",
+		"ruby": "rvm-auto-ruby"
+	},
+	"sublimelinter_syntax_map":
+	{
+		"Ruby on Rails": "ruby"
+	},
+	"tab_size": 4,
+	"theme": "Spacegray.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"vintage_start_in_command_mode": true,
+	"word_wrap": true
 }
