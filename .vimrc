@@ -16,7 +16,7 @@ Bundle "fugitive.vim"
 Bundle "surround.vim"
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
-Plugin 'wincent/command-t'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -44,7 +44,13 @@ set nowritebackup
 set noswapfile 
 
 " configure things
-let g:solarized_termtrans=0
-let g:solarized_termcolors=256
+let g:solarized_termtrans=1
 let g:airline_powerline_fonts=1
-set t_Co=256
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*._,.fuse_*,.DS_Store,*.smbdelete     " MacOSX/Linux
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|node_modules|build)$',
+  \ 'file': '\v\.(exe|so|dll|min.js|min.css)$',
+  \ }
+
