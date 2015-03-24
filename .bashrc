@@ -40,12 +40,7 @@ alias ll='ls -l'
 alias lla='ls -la'
 
 # --  Git --
-alias gl='git log --graph --oneline --decorate --all'
-alias branchclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git branch -d' # Delete all local, merged branches except hte current one & dev
 alias gitroot='cd "$(git rev-parse --show-toplevel)"' # cd to root of current git repo
-function gbr() {
-    git checkout -b $1
-}
 
 # Color output in grep
 alias grep='grep --color=auto'
@@ -56,15 +51,6 @@ bind "set show-all-if-ambiguous on"
 
 # Mount shortcuts
 alias mountboom='sshfs -o workaround=rename,reconnect,volname=www joe@boomstick:/home/joe/www ~/www'
-
-function gitup() {
-    git checkout $1
-    git pull upstream $1
-}
-
-function gb() {
-    git checkout -b $1
-}
 
 # Change to working directory
 function cw() {
