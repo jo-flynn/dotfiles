@@ -1,20 +1,23 @@
 [user]
-	email = joe@viastudio.com
-	name = Joe Flynn
+    email = joe@viastudio.com
+    name = Joe Flynn
 [core]
-	excludesfile = ~/.gitignore
-	editor = vim
+    excludesfile = ~/.gitignore
+    editor = vim
 [color]
     ui = true
 [alias]
     co = checkout
+    po = pull origin
+    pu = pull upstream
     l1 = log --oneline --decorate
     graph = log --graph --oneline --decorate --all
     ec = config --global -e
-    up = "!f() { git checkout ${1-master}; git pull upstream ${1-master}; }; f"
     cob = checkout -b
     cm = !git add -A && git commit -m
     save = !git add -A && git commit -m 'SAVEPOINT'
     undo = reset HEAD~1 --mixed
     amend = commit -a --amend
+    ri = rebase -i
     bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    bcleanF = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -D; }; f"

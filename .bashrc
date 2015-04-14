@@ -45,6 +45,9 @@ alias gitroot='cd "$(git rev-parse --show-toplevel)"' # cd to root of current gi
 # Color output in grep
 alias grep='grep --color=auto'
 
+# WP-CLI
+alias wpmt='wp --path=wordpress'
+
 # Autocomplete settings
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
@@ -70,3 +73,11 @@ function _cw() {
 }
 
 complete -F _cw cw
+
+_git_pu() {
+    _git_branch
+}
+
+_git_po() {
+    _git_branch
+}
