@@ -81,3 +81,7 @@ _git_pu() {
 _git_po() {
     _git_branch
 }
+
+_git_pr() {
+    _git_branch
+}
