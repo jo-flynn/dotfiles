@@ -38,6 +38,7 @@ else
 fi
 alias ll='ls -l'
 alias lla='ls -la'
+alias gw='grunt watch'
 
 # --  Git --
 alias gitroot='cd "$(git rev-parse --show-toplevel)"' # cd to root of current git repo

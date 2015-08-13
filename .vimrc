@@ -14,9 +14,10 @@ Bundle "Markdown"
 Bundle "git.zip"
 Bundle "fugitive.vim"
 Bundle "surround.vim"
-Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'jpo/vim-railscasts-theme'
+Plugin 'groenewege/vim-less'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -30,18 +31,30 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set smartindent
-colorscheme solarized
 set background=dark
+colorscheme solarized
+
+" easier split manipulation
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+
+" trim trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
 
 " searches
 set ignorecase
-set showmode 
+set showmode
 :imap ;; <Esc>
 
 " no backups/swap
 set nobackup
-set nowritebackup  
-set noswapfile 
+set nowritebackup
+set noswapfile
+
+" filetypes
+au BufNewFile,BufRead *.ctp set filetype=php
 
 " configure things
 let g:solarized_termtrans=1
