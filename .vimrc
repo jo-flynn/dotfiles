@@ -33,6 +33,7 @@ set autoindent
 set smartindent
 set background=dark
 colorscheme solarized
+set showtabline=2
 
 " easier split manipulation
 nnoremap <C-L> <C-W><C-L>
