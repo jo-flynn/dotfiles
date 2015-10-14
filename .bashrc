@@ -86,3 +86,7 @@ _git_po() {
 _git_pr() {
     _git_branch
 }
+
+_git_switch() {
+    _git_branch
+}
