@@ -23,3 +23,4 @@
     bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
     bcleanF = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -D; }; f"
     switch = "!f() { git checkout ${1-master}; git pull upstream ${1-master}; }; f"
+    new = "!f() { git checkout ${2-master}; git pull upstream ${2-master}; git checkout -b $1; }; f"

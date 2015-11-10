@@ -75,6 +75,11 @@ function _cw() {
 
 complete -F _cw cw
 
+function ct() {
+    rootdir=$(git rev-parse --show-toplevel)
+    cd $rootdir/wp-content/themes/$1
+}
+
 _git_pu() {
     _git_branch
 }
@@ -88,5 +93,9 @@ _git_pr() {
 }
 
 _git_switch() {
+    _git_branch
+}
+
+_git_new() {
     _git_branch
 }
