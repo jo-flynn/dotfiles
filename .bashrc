@@ -21,11 +21,12 @@ PS1="\n\[\033[0;33m\]\u@\h \033[34m\]\w\[\033[0m\]\n\[\033[32m\]\$(__git_ps1 '%s
 
 # --- Setup Color Vars ---
 export CLICOLOR=1
-export TERM=xterm-color
 export LSCOLORS=ExFxCxDxBxegedabagacad
+alias tmux="tmux -2"
 
 # -- PATH --
 export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/bin:$PATH
 export PATH
 
 # -- File navigation aliases --
@@ -37,17 +38,16 @@ else
 fi
 alias ll='ls -l'
 alias lla='ls -la'
+alias gw='grunt watch'
 
 # --  Git --
-alias gl='git log --graph --oneline --decorate --all'
-alias branchclean='git branch | grep -v "\*" | grep -v 'dev' | xargs -n 1 git branch -d' # Delete all local, merged branches except hte current one & dev
 alias gitroot='cd "$(git rev-parse --show-toplevel)"' # cd to root of current git repo
-function gbr() {
-    git checkout -b $1
-}
 
 # Color output in grep
 alias grep='grep --color=auto'
+
+# WP-CLI
+alias wpmt='wp --path=wordpress'
 
 # Autocomplete settings
 bind "set completion-ignore-case on"
@@ -55,15 +55,6 @@ bind "set show-all-if-ambiguous on"
 
 # Mount shortcuts
 alias mountboom='sshfs -o workaround=rename,reconnect,volname=www joe@boomstick:/home/joe/www ~/www'
-
-function gitup() {
-    git checkout $1
-    git pull upstream $1
-}
-
-function gb() {
-    git checkout -b $1
-}
 
 # Change to working directory
 function cw() {
@@ -83,3 +74,28 @@ function _cw() {
 }
 
 complete -F _cw cw
+
+function ct() {
+    rootdir=$(git rev-parse --show-toplevel)
+    cd $rootdir/wp-content/themes/$1
+}
+
+_git_pu() {
+    _git_branch
+}
+
+_git_po() {
+    _git_branch
+}
+
+_git_pr() {
+    _git_branch
+}
+
+_git_switch() {
+    _git_branch
+}
+
+_git_new() {
+    _git_branch
+}
