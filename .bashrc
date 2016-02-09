@@ -13,6 +13,9 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_SHOWSTASHSTATE=1
+export LESSCHARSET=utf-8
+export LC_ALL=en_US.UTF-8
+export LANG=en_us.UTF-8
 
 # --- Customize Bash Prompt ---
 # [machinename] - [pwd] (git-repo)
