@@ -57,7 +57,7 @@ bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 
 # Mount shortcuts
-alias mountboom='sshfs -o workaround=rename,reconnect,volname=www joe@boomstick:/home/joe/www ~/www'
+alias mountboom='sshfs -o noappledouble,noapplexattr,workaround=rename,reconnect,volname=www joe@boomstick:/home/joe/www ~/www'
 
 # Change to working directory
 function cw() {

@@ -1,4 +1,5 @@
 {
+	"always_show_minimap_viewport": false,
 	"auto_complete": true,
 	"binary_file_patterns":
 	[
@@ -19,7 +20,7 @@
 	],
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Spacegray/Solarized (dark) (SL).tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 	"convert_tabspaces_on_save": true,
 	"create_window_at_startup": false,
 	"detect_indentation": false,
@@ -27,6 +28,43 @@
 	"draw_indent_guides": true,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
+	"extra_file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		".DS_Store",
+		"._*",
+		".fuse_*",
+		"*.smbdelete*"
+	],
+	"extra_folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"tmp/cache",
+		"cache/slir",
+		"node_modules",
+		".sass-cache"
+	],
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -62,13 +100,18 @@
 		"tmp/cache",
 		"cache/slir",
 		"node_modules",
-		".sass-cache"
+		".sass-cache",
+		"wp-admin",
+		"wp-includes",
+		"twentysixteen",
+		"twentyfifteen",
+		"twentyfourteen",
+		"twentythirteen",
+		"upgrade"
 	],
+	"follow_symlinks": false,
 	"font_face": "Input",
-	"font_options":
-	[
-	],
-	"font_size": 11.0,
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -76,6 +119,11 @@
 		"CSS",
 		"Markdown",
 		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
 	],
 	"index_exclude_patterns":
 	[
@@ -87,6 +135,10 @@
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"match_brackets": false,
+	"material_theme_compact_sidebar": true,
+	"material_theme_small_statusbar": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_autowidth": true,
 	"scroll_past_end": true,
 	"show_full_path": true,
 	"smart_indent": true,
@@ -102,7 +154,7 @@
 		"Ruby on Rails": "ruby"
 	},
 	"tab_size": 4,
-	"theme": "Spacegray Solarized Dark.sublime-theme",
+	"theme": "Material-Theme.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true
