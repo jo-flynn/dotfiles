@@ -95,6 +95,10 @@ _git_pr() {
     _git_branch
 }
 
+_git_prf() {
+    _git_branch
+}
+
 _git_switch() {
     _git_branch
 }

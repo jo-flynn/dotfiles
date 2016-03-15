@@ -15,6 +15,7 @@
     po = pull origin
     pu = pull upstream
     pr = push origin
+    prf = push -f origin
     l1 = log --oneline --decorate
     graph = log --graph --oneline --decorate --all
     ec = config --global -e
