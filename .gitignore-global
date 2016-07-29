@@ -1,0 +1,6 @@
+# symlink to ~/.gitignore
+.DS_Store
+._*
+.fuse_*
+.AppleDouble
+npm-debug.log
