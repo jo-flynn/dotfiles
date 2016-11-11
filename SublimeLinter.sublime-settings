@@ -1,8 +1,7 @@
 {
 	"user":
 	{
-		"@disable": true,
-		"debug": true,
+		"debug": false,
 		"delay": 0.25,
 		"error_color": "D02000",
 		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
@@ -24,6 +23,16 @@
 				],
 				"ignore": "",
 				"warnings": ""
+			},
+			"eslint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
 			},
 			"jscs":
 			{
