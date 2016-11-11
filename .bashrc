@@ -20,7 +20,8 @@ export LANG=en_us.UTF-8
 # --- Customize Bash Prompt ---
 # pwd
 # git-branch $
-PS1="\n\033[34m\]\w\[\033[0m\]\n\[\033[32m\]\$(__git_ps1 '%s ')\[\033[35m\]\[\033[0;31m\]$ \[\033[0m\]"
+PS1="\n\033[34m\]\w\[\033[0m\] \[\033[32m\]\$(__git_ps1 '%s')\n\[\033[35m\]\[\033[0;31m\]♥ \[\033[0m\]"
+
 
 # --- Setup Color Vars ---
 export CLICOLOR=1

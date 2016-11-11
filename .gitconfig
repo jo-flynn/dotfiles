@@ -14,6 +14,7 @@
     co = checkout
     po = pull origin
     pu = pull upstream
+    pullr = pull --rebase
     pr = push origin
     prf = push -f origin
     l1 = log --oneline --decorate
