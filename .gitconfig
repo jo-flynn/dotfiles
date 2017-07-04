@@ -6,7 +6,6 @@
     editor = vim
 [rebase]
     autostash = true
-	autosquash = true
 [color]
     ui = true
 [alias]

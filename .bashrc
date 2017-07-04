@@ -40,7 +40,6 @@ else
 fi
 alias ll='ls -l'
 alias lla='ls -la'
-alias gw='grunt watch'
 
 # -- Dev aliases --
 alias rup='bundle exec rails s'
@@ -53,9 +52,6 @@ function rmigdown() {
 
 # Color output in grep
 alias grep='grep --color=auto'
-
-# WP-CLI
-alias wpmt='wp --path=wordpress'
 
 # Autocomplete settings
 bind "set completion-ignore-case on"
