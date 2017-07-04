@@ -4,3 +4,4 @@
 .fuse_*
 .AppleDouble
 npm-debug.log
+yarn-error.log

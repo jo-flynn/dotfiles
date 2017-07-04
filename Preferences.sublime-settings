@@ -1,15 +1,4 @@
 {
-	"added_words":
-	[
-		"autocompleting",
-		"dropdowns",
-		"templating",
-		"intranet",
-		"intranet's",
-		"Autocompleters",
-		"autocompleter",
-		"sazerac"
-	],
 	"always_show_minimap_viewport": false,
 	"auto_complete": true,
 	"binary_file_patterns":
@@ -31,7 +20,7 @@
 	],
 	"bold_folder_labels": false,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
 	"convert_tabspaces_on_save": true,
 	"create_window_at_startup": false,
 	"detect_indentation": false,
@@ -121,12 +110,11 @@
 		"upgrade"
 	],
 	"follow_symlinks": false,
-	"font_face": "Input",
+	"font_face": "Operator Mono",
 	"font_options":
 	[
-		"subpixel_antialias"
 	],
-	"font_size": 11,
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -152,6 +140,8 @@
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"match_brackets": false,
+	"material_theme_accent_brba": true,
+	"material_theme_accent_pink": true,
 	"material_theme_accent_scrollbars": true,
 	"material_theme_bright_scrollbars": true,
 	"material_theme_compact_panel": true,
@@ -162,7 +152,6 @@
 	"scroll_past_end": true,
 	"show_full_path": true,
 	"smart_indent": true,
-	"spacegray_sidebar_font_small": true,
 	"sublimelint": "load-save",
 	"sublimelinter_executable_map":
 	{
@@ -174,7 +163,7 @@
 		"Ruby on Rails": "ruby"
 	},
 	"tab_size": 4,
-	"theme": "Material-Theme.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"theme_accent_cyan": true,
 	"theme_button_rounded": true,
 	"theme_dirty_accent_numix": true,

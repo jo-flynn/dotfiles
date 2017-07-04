@@ -1,10 +1,9 @@
 [user]
-    email = joe@viastudio.com
+    email = joe@domain7.com
     name = Joe Flynn
 [core]
     excludesfile = ~/.gitignore
     editor = vim
-	pager = diff-highlight | diff-so-fancy | less -r
 [rebase]
     autostash = true
 	autosquash = true
@@ -22,17 +21,10 @@
     ec = config --global -e
     cob = checkout -b
     cm = !git add -A && git commit -m
-    save = !git add -A && git commit -m 'SAVEPOINT'
+    save = !git add -A && git commit --no-verify -m 'squashme: WIP'
     undo = reset HEAD~1 --mixed
-    amend = commit -a --amend
+    amend = !git add -A && git commit --amend
     ri = rebase -i
     nope = checkout -- .
-    bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
-    bcleanF = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -D; }; f"
-    switch = "!f() { git checkout ${1-master}; git pull upstream ${1-master}; }; f"
-    new = "!f() { git checkout ${2-master}; git pull upstream ${2-master}; git checkout -b $1; }; f"
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+    switch = "!f() { git checkout ${1-master}; git pull origin ${1-master}; }; f"
+    new = "!f() { git checkout ${2-master}; git pull origin ${2-master}; git checkout -b $1; }; f"
