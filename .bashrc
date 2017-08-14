@@ -17,7 +17,22 @@ export LESSCHARSET=utf-8
 export LC_ALL=en_US.UTF-8
 export LANG=en_us.UTF-8
 
-PS1="\n\033[34m\]\w\[\033[0m\] \[\033[32m\]\$(__git_ps1 '%s')\n\[\033[35m\]\[\033[0;31m\]♥ \[\033[0m\]"
+# colors
+black="\e[0;30m"
+red="\e[0;31m"
+green="\e[0;32m"
+orange="\e[0;33m"
+blue="\e[0;34m"
+purple="\e[0;35m"
+cyan="\e[0;36m"
+white="\e[0;37m"
+
+# typography
+bold="\e[1m"
+italic="\e[3m"
+reset="\e[0m"
+
+PS1="\n\[$cyan$italic\]\w\[$reset\] \[$purple$italic\]\$(__git_ps1 '%s')\n\[$red\]♥ \[$reset\]"
 
 # --- Setup Color Vars ---
 export CLICOLOR=1
@@ -66,11 +81,7 @@ function cw() {
 function _cw() {
     local cur opts
     cur="${COMP_WORDS[COMP_CWORD]}"
-    if [ $OSTYPE = "linux-gnu" ]; then
-        opts=$(cd ~/dev ; ls -d --color=never */. | sed 's|/./||')
-    else
-        opts=$(cd ~/dev ; ls -d */. | sed 's|/./||')
-    fi
+    opts=$(cd ~/dev ; ls -d */. | sed 's|/./||')
     COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
 }
 
