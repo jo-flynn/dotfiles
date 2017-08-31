@@ -110,11 +110,11 @@
 		"upgrade"
 	],
 	"follow_symlinks": false,
-	"font_face": "Input Mono",
+	"font_face": "Operator Mono",
 	"font_options":
 	[
 	],
-	"font_size": 13,
+	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":

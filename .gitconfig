@@ -27,3 +27,4 @@
     nope = checkout -- .
     switch = "!f() { git checkout ${1-master}; git pull origin ${1-master}; }; f"
     new = "!f() { git checkout ${2-master}; git pull origin ${2-master}; git checkout -b $1; }; f"
+    cleanup = "!f() { git branch --merged master | grep -v master | xargs -n 1 git branch -d; }; f"
