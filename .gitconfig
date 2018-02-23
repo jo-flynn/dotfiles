@@ -4,6 +4,8 @@
 [core]
     excludesfile = ~/.gitignore
     editor = vim
+[pull]
+    rebase = true
 [rebase]
     autostash = true
 [color]

@@ -46,99 +46,101 @@
   display: none !important;
 }
 
-.settings-view input[type="checkbox"]:active,
-.settings-view input[type="checkbox"]:checked,
-.tab-bar .tab .close-icon:hover,
-.tab-bar .tab::before {
-  background-color: @pink;
-}
-
-atom-text-editor .cursor,
-atom-text-editor[mini] .cursor {
-  border-color: @pink;
-}
-
-.btn.selected, .btn.btn-default.selected,
-atom-pane.active .tab.active:before,
-.highlight-info {
-  background: @pink;
-}
-
-atom-text-editor .find-result .region.region.region, atom-text-editor .current-result .region.region.region {
-  background: fade(darken(desaturate(@pink, 15%), 25%), 20%);
-}
-
-atom-text-editor .current-result .region.region.region {
-  border-color: @pink;
-}
-
-.settings-view .link,
-.settings-view .link:hover,
-.tab-bar .tab.modified:hover .close-icon,
-.tab-bar .tab.modified:not(:hover) .close-icon,
-.settings-view .package-readme a,
-.command-palette .list-group .character-match,
-.fuzzy-finder .list-group .character-match {
-  color: @pink;
-}
-
-atom-text-editor .bracket-matcher .region {
-  border-bottom-color: @pink;
-}
-
-atom-text-editor[mini].is-focused {
-  border-color: @pink;
-  box-shadow: 0 0 0 1px @pink;
-}
-
-.tooltip {
-  .tooltip-inner {
-    background-color: @pink;
-  }
-
-  &.top .tooltip-arrow {
-    border-top-color: @pink;
-  }
-
-  &.top-left .tooltip-arrow {
-    border-top-color: @pink;
-  }
-
-  &.top-right .tooltip-arrow {
-    border-top-color: @pink;
-  }
-
-  &.right .tooltip-arrow {
-    border-right-color: @pink;
-  }
-
-  &.left .tooltip-arrow {
-    border-left-color: @pink;
-  }
-
-  &.bottom .tooltip-arrow {
-    border-bottom-color: @pink;
-  }
-
-  &.bottom-left .tooltip-arrow {
-    border-bottom-color: @pink;
-  }
-
-  &.bottom-right .tooltip-arrow {
-    border-bottom-color: @pink;
-  }
-}
-
-atom-text-editor.editor .is-focused .cursors .cursor {
-  opacity: 1;
-}
+// .settings-view input[type="checkbox"]:active,
+// .settings-view input[type="checkbox"]:checked,
+// .tab-bar .tab .close-icon:hover,
+// .tab-bar .tab::before {
+//   background-color: @pink;
+// }
+//
+// atom-text-editor .cursor,
+// atom-text-editor[mini] .cursor {
+//   border-color: @pink;
+// }
+//
+// .btn.selected, .btn.btn-default.selected,
+// atom-pane.active .tab.active:before,
+// .highlight-info {
+//   background: @pink;
+// }
+//
+// atom-text-editor .find-result .region.region.region, atom-text-editor .current-result .region.region.region {
+//   background: fade(darken(desaturate(@pink, 15%), 25%), 20%);
+// }
+//
+// atom-text-editor .current-result .region.region.region {
+//   border-color: @pink;
+// }
+//
+// .settings-view .link,
+// .settings-view .link:hover,
+// .tab-bar .tab.modified:hover .close-icon,
+// .tab-bar .tab.modified:not(:hover) .close-icon,
+// .settings-view .package-readme a,
+// .command-palette .list-group .character-match,
+// .fuzzy-finder .list-group .character-match {
+//   color: @pink;
+// }
+//
+// atom-text-editor .bracket-matcher .region {
+//   border-bottom-color: @pink;
+// }
+//
+// atom-text-editor[mini].is-focused {
+//   border-color: @pink;
+//   box-shadow: 0 0 0 1px @pink;
+// }
+//
+// .tooltip {
+//   .tooltip-inner {
+//     background-color: @pink;
+//   }
+//
+//   &.top .tooltip-arrow {
+//     border-top-color: @pink;
+//   }
+//
+//   &.top-left .tooltip-arrow {
+//     border-top-color: @pink;
+//   }
+//
+//   &.top-right .tooltip-arrow {
+//     border-top-color: @pink;
+//   }
+//
+//   &.right .tooltip-arrow {
+//     border-right-color: @pink;
+//   }
+//
+//   &.left .tooltip-arrow {
+//     border-left-color: @pink;
+//   }
+//
+//   &.bottom .tooltip-arrow {
+//     border-bottom-color: @pink;
+//   }
+//
+//   &.bottom-left .tooltip-arrow {
+//     border-bottom-color: @pink;
+//   }
+//
+//   &.bottom-right .tooltip-arrow {
+//     border-bottom-color: @pink;
+//   }
+// }
+//
+// atom-text-editor.editor .is-focused .cursors .cursor {
+//   opacity: 1;
+// }
 
 // HACK: fixes a theme error, can probably remove eventually
 .theme-one-dark-ui .tab-bar .tab > .title.icon:before,
 .theme-one-light-ui .tab-bar .tab > .title.icon:before {
   top: 0.5em;
+  position: relative;
 }
 
 .theme-pristine-ui .tab-bar .tab > .title.icon:before {
   top: 0.8em;
+  position: relative;
 }

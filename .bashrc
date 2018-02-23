@@ -37,6 +37,7 @@ PS1="\n\[$cyan$italic\]\w\[$reset\] \[$purple$italic\]\$(__git_ps1 '%s')\n\[$red
 # --- Setup Color Vars ---
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+export TERM=xterm-256color-italic
 alias tmux="tmux -2"
 
 # -- PATH --
@@ -60,6 +61,9 @@ alias lla='ls -la'
 alias rup='bundle exec rails s'
 alias rmig='bin/rails db:migrate RAILS_ENV=development'
 alias jsup='sudo npm run start:local'
+
+# -- fix bad macOS stuff --
+alias macFixCamera='sudo killall VDCAssistant'
 
 function rmigdown() {
   rake db:migrate:down VERSION=$1

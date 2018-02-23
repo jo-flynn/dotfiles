@@ -20,7 +20,7 @@
 	],
 	"bold_folder_labels": false,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next Italic (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Oceanic Next (SL).tmTheme",
 	"convert_tabspaces_on_save": true,
 	"create_window_at_startup": false,
 	"detect_indentation": false,
@@ -63,7 +63,14 @@
 		"tmp/cache",
 		"cache/slir",
 		"node_modules",
-		".sass-cache"
+		".sass-cache",
+		"wp-admin",
+		"wp-includes",
+		"twentysixteen",
+		"twentyfifteen",
+		"twentyfourteen",
+		"twentythirteen",
+		"upgrade"
 	],
 	"file_exclude_patterns":
 	[
@@ -89,7 +96,21 @@
 		".DS_Store",
 		"._*",
 		".fuse_*",
-		"*.smbdelete*"
+		"*.smbdelete*",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/components/form-partials/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/yarn-error.log",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/components/ui/DialogForm/npm-debug.log",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/components/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/ims/itineraries/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/ims/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/pms/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/npm-debug.log.143958682",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/components/layout/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/npm-debug.log.3273319259",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/pms/trips/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/app/.DS_Store",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/npm-debug.log.2338290207"
 	],
 	"folder_exclude_patterns":
 	[
@@ -107,7 +128,11 @@
 		"twentyfifteen",
 		"twentyfourteen",
 		"twentythirteen",
-		"upgrade"
+		"upgrade",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/build",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/node_modules",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/.idea",
+		"/Users/joe/dev/docker-ftc-bms/react-ftc-bms/coverage"
 	],
 	"follow_symlinks": false,
 	"font_face": "Operator Mono",
@@ -115,10 +140,13 @@
 	[
 	],
 	"font_size": 14,
+	"gravity_tab_height_short": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Color Highlighter",
+		"JavaScript",
 		"Vintage"
 	],
 	"ignored_words":
@@ -140,15 +168,6 @@
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"match_brackets": false,
-	"material_theme_accent_brba": true,
-	"material_theme_accent_pink": true,
-	"material_theme_accent_scrollbars": true,
-	"material_theme_bright_scrollbars": true,
-	"material_theme_compact_panel": true,
-	"material_theme_compact_sidebar": true,
-	"material_theme_contrast_fileicon": true,
-	"material_theme_small_statusbar": true,
-	"material_theme_small_tab": true,
 	"scroll_past_end": true,
 	"show_full_path": true,
 	"smart_indent": true,
@@ -163,24 +182,7 @@
 		"Ruby on Rails": "ruby"
 	},
 	"tab_size": 4,
-	"theme": "Adaptive.sublime-theme",
-	"theme_accent_cyan": true,
-	"theme_button_rounded": true,
-	"theme_dirty_accent_numix": true,
-	"theme_dirty_colored_always": true,
-	"theme_find_panel_padding_sm": true,
-	"theme_find_panel_size_xs": true,
-	"theme_icons_materialized": true,
-	"theme_quick_panel_size_sm": true,
-	"theme_scrollbar_rounded": true,
-	"theme_sidebar_highlight_selected_text_only": true,
-	"theme_sidebar_highlight_text_only": true,
-	"theme_sidebar_indent_top_level_disabled": true,
-	"theme_size_sm": true,
-	"theme_tab_highlight_text_only": true,
-	"theme_tab_selected_transparent": true,
-	"theme_tab_selected_underlined": true,
-	"theme_unified": true,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true

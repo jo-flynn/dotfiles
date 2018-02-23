@@ -2,10 +2,10 @@
 call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mhartington/oceanic-next'
 " Initialize plugin system
 call plug#end()
 
@@ -15,11 +15,6 @@ call plug#end()
 "(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more
 "information.)
 if (empty($TMUX))
-  if (has("nvim"))
-    " For Neovim 0.1.3 and 0.1.4 <
-    " https://github.com/neovim/neovim/pull/2198 >
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
   if (has("termguicolors"))
     set termguicolors
   endif
@@ -37,11 +32,12 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
-set cursorline
-colorscheme onedark
+colorscheme OceanicNext
 set showtabline=2
 set noshowmode
 set noruler
+"set background=dark
+set t_Co=256
 " easier split manipulation
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
@@ -63,7 +59,10 @@ set noswapfile
 
 " filetypes
 au BufNewFile,BufRead *.ctp set filetype=php
-
-
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/.git/*     " MacOSX/Linux
 
+hi htmlArg cterm=italic
+hi Comment cterm=italic
+hi Type    cterm=italic
+hi xmlAttrib  cterm=italic
+let g:jsx_ext_required = 0
