@@ -58,8 +58,6 @@ alias ll='ls -l'
 alias lla='ls -la'
 
 # -- Dev aliases --
-alias rup='bundle exec rails s'
-alias rmig='bin/rails db:migrate RAILS_ENV=development'
 alias jsup='sudo npm run start:local'
 
 # -- fix bad macOS stuff --
@@ -67,6 +65,13 @@ alias macFixCamera='sudo killall VDCAssistant'
 
 function rmigdown() {
   rake db:migrate:down VERSION=$1
+}
+
+function railstestreset() {
+  bin/rails db:environment:set RAILS_ENV=test
+  bundle exec rake db:drop RAILS_ENV=test
+  bundle exec rake db:create RAILS_ENV=test
+  bin/rails db:migrate RAILS_ENV=test
 }
 
 # Color output in grep
