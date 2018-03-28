@@ -26,6 +26,7 @@
     undo = reset HEAD~1 --mixed
     amend = !git add -A && git commit --amend
     ri = rebase -i
+    changed = "!f() { git diff ${1-master}..$(git rev-parse --abbrev-ref HEAD); }; f"
     nope = checkout -- .
     switch = "!f() { git checkout ${1-master}; git pull origin ${1-master}; }; f"
     new = "!f() { git checkout ${2-master}; git pull origin ${2-master}; git checkout -b $1; }; f"
