@@ -19,6 +19,7 @@
     prf = push -f origin
     l1 = log --oneline --decorate
     graph = log --graph --oneline --decorate --all
+    recent = branch --sort=committerdate
     ec = config --global -e
     cob = checkout -b
     cm = !git add -A && git commit -m
